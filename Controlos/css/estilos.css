@@ -1,0 +1,141 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 18px;
+}
+.landing {
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../../Imagens/img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+nav ul{
+    list-style: georgian;
+    adisplay: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 40px;
+    padding: 30px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;  
+    color: rgb(213, 216, 66);
+    border-bottom: 10px;
+    border: 1px solid;
+    transition: 0.8s;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+nav ul li a:hover{
+    background-color: rgb(185, 169, 19);
+    border-radius: 10px;
+    
+}
+
+.picture{
+    width: 400px;
+    aspect-ration:16/9;
+    background:#ddd;
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+    font-family: sans-serief;
+}
+.picture_input{
+    width: 400px;
+    height: 400px;
+}
+.picture: hover{
+    color: #777;
+    background: #ccc;
+}
+
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#preloader{
+    background: #7e7070 url(Imagens/logotipo/200W.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+}
+
